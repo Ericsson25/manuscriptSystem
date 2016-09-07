@@ -11,4 +11,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>User Management Module</name>
+	<modules>
+		<module>user-management-controller</module>
+		<module>user-management-model</module>
+		<module>user-management-persist-mysql</module>
+		<module>user-management-persist</module>
+		<module>user-management-service-impl</module>
+		<module>user-management-service</module>
+		<module>user-management-util</module>
+	</modules>
 </project>
