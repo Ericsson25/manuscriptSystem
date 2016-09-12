@@ -9,4 +9,12 @@
 	<artifactId>online-web</artifactId>
 	<packaging>war</packaging>
 	<name>Online Web Component</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>manuscript.module.user.management</groupId>
+			<artifactId>user-management-controller</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>
