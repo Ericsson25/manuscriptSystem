@@ -6,8 +6,25 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<!-- Spring context builder.  Auto component scan-->
-	<context:component-scan base-package="manuscript" >
+	<mvc:annotation-driven />
+
+	<!-- Spring context builder. Auto component scan -->
+	<context:component-scan base-package="manuscript">
 	</context:component-scan>
+
+	<!-- Request mapping handler -->
+	<bean
+		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="jsonMessageConverter" />
+			</list>
+		</property>
+	</bean>
+
+	<!-- Configure bean to convert JSON to POJO and vice versa -->
+	<bean id="jsonMessageConverter"
+		class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+	</bean>
 
 </beans>
