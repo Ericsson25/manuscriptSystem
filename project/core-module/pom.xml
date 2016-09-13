@@ -9,6 +9,12 @@
 	<artifactId>core-module</artifactId>
 	<name>Core Module Component</name>
 
+	<developers>
+		<developer>
+			<name>Balazs Kovacs</name>
+		</developer>
+	</developers>
+
 	<dependencies>
 		<dependency>
 			<groupId>mysql</groupId>

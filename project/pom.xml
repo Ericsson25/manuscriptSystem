@@ -11,11 +11,58 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Manuscript System Project</name>
+
+	<developers>
+		<developer>
+			<name>Balazs Kovacs</name>
+		</developer>
+	</developers>
+
 	<modules>
 		<module>admin-web</module>
 		<module>online-web</module>
 		<module>core-module</module>
 	</modules>
+
+	<properties>
+		<user-management.version>0.0.1-SNAPSHOT</user-management.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- user-management module -->
+			<dependency>
+				<groupId>manuscript.module.user.management</groupId>
+				<artifactId>user-management-controller</artifactId>
+				<version>${user-management.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>manuscript.module.user.management</groupId>
+				<artifactId>user-management-model</artifactId>
+				<version>${user-management.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>manuscript.module.user.management</groupId>
+				<artifactId>user-management-persist</artifactId>
+				<version>${user-management.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>manuscript.module.user.management</groupId>
+				<artifactId>user-management-persist-mysql</artifactId>
+				<version>${user-management.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>manuscript.module.user.management</groupId>
+				<artifactId>user-management-service</artifactId>
+				<version>${user-management.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>manuscript.module.user.management</groupId>
+				<artifactId>user-management-service-impl</artifactId>
+				<version>${user-management.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<dependencies>
 		<dependency>
@@ -26,6 +73,16 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
 		</dependency>
 	</dependencies>
 </project>

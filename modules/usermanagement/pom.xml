@@ -11,6 +11,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>User Management Module</name>
+
+	<developers>
+		<developer>
+			<name>Balazs Kovacs</name>
+		</developer>
+	</developers>
+
 	<modules>
 		<module>user-management-controller</module>
 		<module>user-management-model</module>

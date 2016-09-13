@@ -10,11 +10,36 @@
 	<packaging>war</packaging>
 	<name>Online Web Component</name>
 
+	<developers>
+		<developer>
+			<name>Balazs Kovacs</name>
+		</developer>
+	</developers>
+
 	<dependencies>
 		<dependency>
 			<groupId>manuscript.module.user.management</groupId>
 			<artifactId>user-management-controller</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>manuscript.module.user.management</groupId>
+			<artifactId>user-management-model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>manuscript.module.user.management</groupId>
+			<artifactId>user-management-persist</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>manuscript.module.user.management</groupId>
+			<artifactId>user-management-persist-mysql</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>manuscript.module.user.management</groupId>
+			<artifactId>user-management-service</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>manuscript.module.user.management</groupId>
+			<artifactId>user-management-service-impl</artifactId>
 		</dependency>
 	</dependencies>
 </project>

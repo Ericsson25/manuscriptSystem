@@ -9,4 +9,11 @@
 	<artifactId>admin-web</artifactId>
 	<packaging>war</packaging>
 	<name>Admin Web Component</name>
+
+	<developers>
+		<developer>
+			<name>Balazs Kovacs</name>
+		</developer>
+	</developers>
+
 </project>
