@@ -26,6 +26,7 @@
 		<logback-classic.version>1.1.7</logback-classic.version>
 		<jcl-over-slf4j.version>1.7.21</jcl-over-slf4j.version>
 		<jackson-databind.version>2.8.2</jackson-databind.version>
+		<servlet-api.version>2.5</servlet-api.version>
 	</properties>
 
 	<dependencyManagement>
@@ -142,6 +143,13 @@
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
 				<version>${jackson-databind.version}</version>
+			</dependency>
+
+			<!-- Servlet -->
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<version>${servlet-api.version}</version>
 			</dependency>
 
 		</dependencies>
