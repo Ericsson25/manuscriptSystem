@@ -9,5 +9,5 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface UserRegistrationMapper {
 
-	String getUserName(@Param("userName") String userName);
+	String getUserName();
 }

@@ -9,8 +9,7 @@ public class Address {
 
 	private String address;
 	private String city;
-	private String state;
-	private String postal;
+	private String zipCode;
 	private String country;
 
 	public Address() {
@@ -18,12 +17,11 @@ public class Address {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Address(String address, String city, String state, String postal, String country) {
+	public Address(String address, String city, String postal, String country) {
 		super();
 		this.address = address;
 		this.city = city;
-		this.state = state;
-		this.postal = postal;
+		this.zipCode = postal;
 		this.country = country;
 	}
 
@@ -43,20 +41,12 @@ public class Address {
 		this.city = city;
 	}
 
-	public String getState() {
-		return state;
-	}
-
-	public void setState(String state) {
-		this.state = state;
-	}
-
 	public String getPostal() {
-		return postal;
+		return zipCode;
 	}
 
 	public void setPostal(String postal) {
-		this.postal = postal;
+		this.zipCode = postal;
 	}
 
 	public String getCountry() {
@@ -65,12 +55,6 @@ public class Address {
 
 	public void setCountry(String country) {
 		this.country = country;
-	}
-
-	@Override
-	public String toString() {
-		return "Address [address=" + address + ", city=" + city + ", state=" + state + ", postal=" + postal
-				+ ", country=" + country + "]";
 	}
 
 }
