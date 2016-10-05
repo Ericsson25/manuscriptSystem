@@ -1,7 +1,5 @@
 package manuscript.module.user.management.registration.mapper;
 
-import org.apache.ibatis.annotations.Param;
-
 /**
  * 
  * @author Balazs Kovacs
@@ -9,5 +7,5 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface UserRegistrationMapper {
 
-	String getUserName();
+	public String getUserName();
 }

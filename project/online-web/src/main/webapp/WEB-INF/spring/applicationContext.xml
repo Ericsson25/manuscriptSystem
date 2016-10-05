@@ -14,6 +14,9 @@
 	<!-- Spring context builder. Auto component scan -->
 	<context:component-scan base-package="manuscript">
 	</context:component-scan>
+	
+	<!-- Looking for the MyBatis mapper interfaces. The package name must be *.mapper -->
+	<mybatis:scan base-package="**.mapper"/>
 
 	<!-- Used to create the basic database data source.  -->
 	<jee:jndi-lookup id="DatabaseDS" jndi-name="java:comp/env/jdbc/DatabaseDS" />
@@ -40,7 +43,6 @@
 
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="DatabaseDS" />
-		<property name="mapperLocations" value="classpath*:manuscript/**/*.xml"></property>
 	</bean>
 
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
