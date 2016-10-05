@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import manuscript.module.user.management.registration.UserRegistrationService;
+import manuscript.module.user.management.request.UserRegistrationPreloadRequest;
 import manuscript.module.user.management.request.UserRegistrationRequest;
+import manuscript.module.user.management.response.UserRegistrationPreloadResponse;
 import manuscript.module.user.management.response.UserRegistrationResponse;
 
 /**
@@ -22,10 +23,10 @@ public class UserRegistrationController {
 	@Autowired
 	private UserRegistrationService userRegistrationService;
 
-	// @RequestMapping("/proload")
-	// public void proload() {
-	//
-	// }
+	@RequestMapping("/proload")
+	public UserRegistrationPreloadResponse proload(UserRegistrationPreloadRequest request) {
+		return userRegistrationService.userRegistrationPreload(request);
+	}
 
 	@RequestMapping(value = "/create")
 	@ResponseBody
