@@ -33,4 +33,5 @@ public class UserRegistrationController {
 	public UserRegistrationResponse createRegistration(@RequestBody UserRegistrationRequest request) {
 		return userRegistrationService.createRegistration(request);
 	}
+	
 }
