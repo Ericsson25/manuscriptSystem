@@ -16,4 +16,57 @@
 		</developer>
 	</developers>
 
+	<dependencies>
+		<dependency>
+			<groupId>manuscript.module.academic.disciplines</groupId>
+			<artifactId>academic-disciplines-controller</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>manuscript.module.academic.disciplines</groupId>
+			<artifactId>academic-disciplines-model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>manuscript.module.academic.disciplines</groupId>
+			<artifactId>academic-disciplines-persist</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>manuscript.module.academic.disciplines</groupId>
+			<artifactId>academic-disciplines-persist-mysql</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>manuscript.module.academic.disciplines</groupId>
+			<artifactId>academic-disciplines-service</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>manuscript.module.academic.disciplines</groupId>
+			<artifactId>academic-disciplines-service-impl</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+		</dependency>
+	</dependencies>
+
 </project>

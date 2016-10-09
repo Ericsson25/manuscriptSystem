@@ -26,6 +26,7 @@
 
 	<properties>
 		<user-management.version>0.0.1-SNAPSHOT</user-management.version>
+		<academic-disciplines.version>0.0.1-SNAPSHOT</academic-disciplines.version>
 	</properties>
 
 	<dependencyManagement>
@@ -60,6 +61,37 @@
 				<groupId>manuscript.module.user.management</groupId>
 				<artifactId>user-management-service-impl</artifactId>
 				<version>${user-management.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>manuscript.module.academic.disciplines</groupId>
+				<artifactId>academic-disciplines-controller</artifactId>
+				<version>${academic-disciplines.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>manuscript.module.academic.disciplines</groupId>
+				<artifactId>academic-disciplines-model</artifactId>
+				<version>${academic-disciplines.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>manuscript.module.academic.disciplines</groupId>
+				<artifactId>academic-disciplines-persist</artifactId>
+				<version>${academic-disciplines.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>manuscript.module.academic.disciplines</groupId>
+				<artifactId>academic-disciplines-persist-mysql</artifactId>
+				<version>${academic-disciplines.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>manuscript.module.academic.disciplines</groupId>
+				<artifactId>academic-disciplines-service</artifactId>
+				<version>${academic-disciplines.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>manuscript.module.academic.disciplines</groupId>
+				<artifactId>academic-disciplines-service-impl</artifactId>
+				<version>${academic-disciplines.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
