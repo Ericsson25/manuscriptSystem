@@ -35,7 +35,7 @@
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-	&quot;nodes&quot; : [&#xd;
+	&quot;parentNode&quot; : [&#xd;
   {&#xd;
     &quot;id&quot;: &quot;01&quot;,&#xd;
     &quot;name&quot;: &quot;Arts&quot;,&#xd;
@@ -218,7 +218,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/admin-web/academicdisciplines/manage</stringProp>
+            <stringProp name="HTTPSampler.path">/admin-web/academicdisciplines/uploadAll</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
