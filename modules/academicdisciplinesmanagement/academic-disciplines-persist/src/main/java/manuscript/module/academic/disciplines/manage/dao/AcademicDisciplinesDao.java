@@ -1,4 +1,4 @@
-package manuscript.module.academic.disciplines.manage.service;
+package manuscript.module.academic.disciplines.manage.dao;
 
 import manuscript.module.academic.disciplines.request.AcademicDisciplinesUploadAllRequest;
 import manuscript.module.academic.disciplines.response.AcademicDisciplinesUploadAllResponse;
@@ -8,13 +8,7 @@ import manuscript.module.academic.disciplines.response.AcademicDisciplinesUpload
  * @author Balazs Kovacs
  *
  */
-public interface AcademicDisciplinesService {
+public interface AcademicDisciplinesDao {
 
-	/**
-	 * It will update the whole academic disciplines table.
-	 * 
-	 * @param The whole json of the academic disciplines
-	 * @return Success or error message. If success the updated academic discipline tree as well.
-	 */
 	public AcademicDisciplinesUploadAllResponse updateAllAcademicDisciplines(AcademicDisciplinesUploadAllRequest request);
 }
