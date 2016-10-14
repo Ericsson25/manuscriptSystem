@@ -1,4 +1,4 @@
-package manuscript.module.academic.disciplines.beans;
+package manuscript.module.academic.disciplines.manage.beans;
 
 import java.util.HashMap;
 

@@ -2,7 +2,7 @@ package manuscript.module.academic.disciplines.request;
 
 import java.util.List;
 
-import manuscript.module.academic.disciplines.beans.AcademicDisciplinesBean;
+import manuscript.module.academic.disciplines.manage.beans.AcademicDisciplinesBean;
 
 /**
  * 
