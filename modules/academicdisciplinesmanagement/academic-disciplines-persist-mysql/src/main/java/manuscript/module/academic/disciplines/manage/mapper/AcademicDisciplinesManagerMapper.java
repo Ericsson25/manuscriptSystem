@@ -12,4 +12,6 @@ import manuscript.module.academic.disciplines.manage.beans.AcademicDisciplinesBe
 public interface AcademicDisciplinesManagerMapper {
 
 	public void updateAllAcademicDisciplines(List<AcademicDisciplinesBean> request);
+	
+	public void deleteAllAcademicDisciplines();
 }

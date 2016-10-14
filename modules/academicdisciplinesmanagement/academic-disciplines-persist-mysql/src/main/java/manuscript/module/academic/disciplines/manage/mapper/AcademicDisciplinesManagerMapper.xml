@@ -12,4 +12,8 @@
 			#{element.name})
 		</foreach>
 	</insert>
+	
+	<delete id="deleteAllAcademicDisciplines">
+		DELETE FROM ACADEMIC_DISCIPLINES;
+	</delete>
 </mapper>

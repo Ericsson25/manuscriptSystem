@@ -39,4 +39,8 @@
 	<changeSet id="create-login-table" author="balazskovacs">
 		<sqlFile path="src/main/resources/liquibase/initial-scripts/ddl/login.sql" encoding="UTF-8" dbms="mysql" endDelimiter="#"/>
 	</changeSet>
+	
+	<changeSet id="create-academic-disciplines-table" author="balazskovacs">
+		<sqlFile path="src/main/resources/liquibase/initial-scripts/ddl/academic-disciplines.sql" encoding="UTF-8" dbms="mysql" endDelimiter="#"/>
+	</changeSet>
 </databaseChangeLog>

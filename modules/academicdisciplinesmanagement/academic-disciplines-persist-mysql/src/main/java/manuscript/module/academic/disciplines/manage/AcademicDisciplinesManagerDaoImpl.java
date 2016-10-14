@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import manuscript.module.academic.disciplines.manage.beans.AcademicDisciplinesBean;
 import manuscript.module.academic.disciplines.manage.mapper.AcademicDisciplinesManagerMapper;
@@ -30,12 +31,9 @@ public class AcademicDisciplinesManagerDaoImpl implements AcademicDisciplinesMan
 		List<AcademicDisciplinesBean> academicDisciplinesList = new ArrayList<AcademicDisciplinesBean>();
 		academicDisciplinesList = request.getAcademicDisciplines();
 
-		try {
+			academicDisciplinesManagerMapper.deleteAllAcademicDisciplines();
 			academicDisciplinesManagerMapper.updateAllAcademicDisciplines(academicDisciplinesList);
 			response.setSucces(true);
-		} catch (Exception e) {
-			System.out.println(e);
-		}
 
 		return response;
 	}
